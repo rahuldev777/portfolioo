@@ -1,0 +1,360 @@
+
+/* font-family: 'Bebas Neue', sans-serif; */
+/* font-family: 'Single Day', cursive; */
+ 
+body{
+    margin: 0px;
+    padding: 0px;
+}
+ 
+nav{
+    display: flex;
+    height: 80px;
+    width:100%;
+    background-color: rgba(0, 0, 0, 0);
+   text-decoration: none;
+   font-size: 11px;
+   justify-content: right;
+   justify-content: space-around;
+   position: sticky;
+   
+  
+
+  
+ 
+}
+nav ul{
+    display: flex; 
+    margin-left: 80px; 
+    margin-right: -789px;
+    margin-top: 30px;
+    
+}
+nav ul a{
+
+    color: rgb(175, 171, 171);
+    margin: 18px;
+   justify-content: space-between;
+   font-size: 20px;
+   font-family: 'Bebas Neue', sans-serif;
+    
+}
+video{
+    height: 630px;
+    width: 100%;
+    object-fit: cover;
+    margin-top: -6%;
+    
+      
+    
+}
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #d3c9ce, 0 0 40px #86757e, 0 0 50px #e2d9d9, 0 0 60px #9e9898, 0 0 70px #f3eaef;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #e6e2e2, 0 0 30px #eee3e3, 0 0 40px #d4d4cd, 0 0 50px #dddddb, 0 0 60px #d1d1cc, 0 0 70px #d8d3d3, 0 0 80px #dfdfd2;
+    }
+}
+.overlay{
+    position: absolute;
+    top: 50%;
+    margin-left: 20%;
+
+    background-color: rgb(158, 9, 9); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px solid #5a5555;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    height: 130px;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+
+}
+.overlay .inner h1{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 50px;
+    color: #353232;
+    animation: glow 3s ease-in-out infinite alternate;
+    -webkit-animation: glow 8s ease-in-out infinite alternate;
+ -moz-animation: glow 1s ease-in-out infinite alternate;
+}
+
+nav ul li a:hover{
+
+    color:goldenrod
+
+}
+
+.videos {
+    position: relative;
+    width: 100%;
+  }
+#careers h2{
+    text-align: center;
+    font-family: 'Teko', sans-serif; 
+    font-size: 40px; 
+    margin-top: 10px;
+    text-shadow: 3px 4px 6px rgb(94, 94, 94);
+}
+.ani {
+    width: 200px;
+    height: 50px;
+    background-color: rgba(129, 129, 129, 0);
+    position: relative;
+    animation-name: example;
+    animation-duration: 9s;
+    animation-iteration-count: 200;
+    animation-direction: alternate-reverse;  
+    margin-left: 42.5%;
+    
+  }
+  
+  @keyframes example {
+    0%   {color:rgba(133, 133, 133, 0); left:0px; top:0px;}
+    25%  {background-color:rgba(70, 70, 68, 0); left:100px; top:0px;}
+    100%  {background-color:rgba(0, 0, 0, 0); left:0px; right:300px; top:0px;}
+  
+    
+  }
+  .row{
+    display: flex;
+  }
+  .box{
+    
+     height: 340px;
+    width: 20%;
+    border: 2px solid black;
+    border-radius: 5%;
+  background-color: hwb(0 35% 63%);
+  margin: 6%;
+  position: absolute;
+  margin-bottom: 20%;
+  box-shadow: 2px 2px 2px 3px black;
+  padding: 10px;
+  
+  }
+  .box:hover{
+    border: 10px inset white;
+  
+}
+#careers{
+  display: flex;
+  flex-direction: column;
+  height: 700px;
+}
+#careers::before{
+  content: "";
+  background-image: url('../study2/image/cristiano-ronaldo-real-madrid-ballon-d-or-wallpaper-f03f67f328dbc7b7566412abf97e6554.jpg');
+  height: 100%;
+  background-size: cover;
+}
+
+p{
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+
+
+
+.slides {
+    padding: 0;
+    width: 609px;
+    height: 420px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+}
+
+.slides * {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+.slides input { display: none; }
+
+.slide-container { display: block; }
+
+.slide {
+    top: 0;
+    opacity: 0;
+    width: 609px;
+    height: 420px;
+    display: block;
+    position: absolute;
+
+    transform: scale(0);
+
+    transition: all .7s ease-in-out;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+.nav label {
+    width: 200px;
+    height: 100%;
+    display: none;
+    position: absolute;
+
+    opacity: 0;
+    z-index: 9;
+    cursor: pointer;
+
+    transition: opacity .2s;
+
+    color: #FFF;
+    font-size: 156pt;
+    text-align: center;
+    line-height: 380px;
+    font-family: "Varela Round", sans-serif;
+    background-color: rgba(255, 255, 255, .3);
+    text-shadow: 0px 0px 15px rgb(119, 119, 119);
+}
+
+.slide:hover + .nav label { opacity: 0.5; }
+
+.nav label:hover { opacity: 1; }
+
+.nav .next { right: 0; }
+
+input:checked + .slide-container  .slide {
+    opacity: 1;
+
+    transform: scale(1);
+
+    transition: opacity 1s ease-in-out;
+}
+
+input:checked + .slide-container .nav label { display: block; }
+
+.nav-dots {
+  width: 100%;
+  bottom: 9px;
+  height: 11px;
+  display: block;
+  position: absolute;
+  text-align: center;
+}
+
+.nav-dots .nav-dot {
+  top: -5px;
+  width: 11px;
+  height: 11px;
+  margin: 0 4px;
+  position: relative;
+  border-radius: 100%;
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.nav-dots .nav-dot:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+input#img-1:checked ~ .nav-dots label#img-dot-1,
+input#img-2:checked ~ .nav-dots label#img-dot-2,
+input#img-3:checked ~ .nav-dots label#img-dot-3,
+input#img-4:checked ~ .nav-dots label#img-dot-4,
+input#img-5:checked ~ .nav-dots label#img-dot-5,
+input#img-6:checked ~ .nav-dots label#img-dot-6 {
+  background: rgba(0, 0, 0, 0.8);
+}
+#gallery{
+  background-image: url('https://wallpapercosmos.com/w/full/b/7/8/100236-3840x2160-desktop-4k-cristiano-ronaldo-background-photo.jpg');
+ background-size: cover;
+
+}
+#gallery h1{
+   margin-top: 10px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 50px;
+    color: #353232;
+    animation: glow 3s ease-in-out infinite alternate;
+    -webkit-animation: glow 8s ease-in-out infinite alternate;
+ -moz-animation: glow 1s ease-in-out infinite alternate;
+
+}
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #d3c9ce, 0 0 40px #86757e, 0 0 50px #e2d9d9, 0 0 60px #9e9898, 0 0 70px #f3eaef;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #e6e2e2, 0 0 30px #eee3e3, 0 0 40px #d4d4cd, 0 0 50px #dddddb, 0 0 60px #d1d1cc, 0 0 70px #d8d3d3, 0 0 80px #dfdfd2;
+  }
+}
+#achieve{
+  width: 100%;
+  height: 1250px;
+  background-image: url('https://www.sportsnet.ca/wp-content/uploads/2017/06/15876488.jpg');
+  background-size: cover;
+}
+#achieve h1{
+  top: 30px;
+  color: #fdf9f9;
+  animation: glow 3s ease-in-out infinite alternate;
+  -webkit-animation: glow 8s ease-in-out infinite alternate;
+-moz-animation: glow 1s ease-in-out infinite alternate;
+}
+#achieve .card-1 h2{
+  color: white;
+  text-shadow: 2px 2px 2px red;
+ 
+}
+.pictu{
+  display: flex;
+}
+.content{
+  margin: 7px;
+  text-align: justify;
+}
+.content p{
+  color: white;
+}
+.card-1{
+  height: 250px;
+  width: 80%;
+  background-color: #0c0c0c7a;
+  border: 2px solid rgba(0, 0, 0, 0.322);
+  margin: 6%;
+  padding: 2%;
+
+}
+#contact{
+
+  height: 100%;
+  width: 100%;
+  background-color: rgb(3, 13, 41);
+}
+.conts{
+  
+  display: flex;
+  flex-direction: column;
+  width:40%;
+  border: 2px solid black;
+  margin-left: 390px;
+ 
+}
+#contact h1{
+  color: #fff7f7;
+  animation: glow 3s ease-in-out infinite alternate;
+  -webkit-animation: glow 8s ease-in-out infinite alternate;
+-moz-animation: glow 1s ease-in-out infinite alternate;
+}
